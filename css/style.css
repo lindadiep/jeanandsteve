@@ -107,6 +107,29 @@ nav a:active {
     color: #500000;
 }
 
+
+/* --------------- RSVP POP UP ------------- */
+/*
+.modal-body {
+    padding: 0px;
+    width: 600px;
+    height: 600px;
+}
+
+.rsvp-popup {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+}*/
+
+
+
+
+/* https://www.sitepoint.com/community/t/need-a-simple-popup-modal-on-page-load-with-time-delay-fast-clean/36860/2
+http://www.jacklmoore.com/colorbox/
+http://stackoverflow.com/questions/3278885/open-an-external-page-in-a-jquery-colorbox */
+
+
 /* --------------- TOP SECTION ------------- */
 
 .top-section {
@@ -161,7 +184,7 @@ nav a:active {
 }
 
 #pics-slideshow {
-    height: 700px;
+    height: auto;
     width: 700px;
     margin: 50px auto;
 }
@@ -441,7 +464,7 @@ footer a:focus, a:hover {
 
     }
 
-    #page-header nav li:first-child{
+    #page-header nav li:first-child {
       display:block;
       position: absolute;
       top:.25em;
@@ -452,7 +475,7 @@ footer a:focus, a:hover {
       display: none;
     }
 
-    iframe {
+    iframe .event-details-iframe {
       width: 300px;
       height: auto;
     }
@@ -462,48 +485,4 @@ footer a:focus, a:hover {
       transition:height 1s;
       overflow: hidden;
     }
-}
-
-
-
-#heart {
-    position: relative;
-    width: 100px;
-    height: 90px;
-}
-
-#heart:before,
-#heart:after {
-    position: absolute;
-    content: "";
-    left: 50px;
-    top: 0;
-    width: 50px;
-    height: 80px;
-    background: red;
-    -moz-border-radius: 50px 50px 0 0;
-    border-radius: 50px 50px 0 0;
-    -webkit-transform: rotate(-45deg);
-       -moz-transform: rotate(-45deg);
-        -ms-transform: rotate(-45deg);
-         -o-transform: rotate(-45deg);
-            transform: rotate(-45deg);
-    -webkit-transform-origin: 0 100%;
-       -moz-transform-origin: 0 100%;
-        -ms-transform-origin: 0 100%;
-         -o-transform-origin: 0 100%;
-            transform-origin: 0 100%;
-}
-#heart:after {
-    left: 0;
-    -webkit-transform: rotate(45deg);
-       -moz-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-         -o-transform: rotate(45deg);
-            transform: rotate(45deg);
-    -webkit-transform-origin: 100% 100%;
-       -moz-transform-origin: 100% 100%;
-        -ms-transform-origin: 100% 100%;
-         -o-transform-origin: 100% 100%;
-            transform-origin :100% 100%;
 }
