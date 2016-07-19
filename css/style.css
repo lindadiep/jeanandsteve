@@ -108,28 +108,6 @@ nav a:active {
 }
 
 
-/* --------------- RSVP POP UP ------------- */
-/*
-.modal-body {
-    padding: 0px;
-    width: 600px;
-    height: 600px;
-}
-
-.rsvp-popup {
-    background-color: white;
-    width: 100%;
-    height: 100%;
-}*/
-
-
-
-
-/* https://www.sitepoint.com/community/t/need-a-simple-popup-modal-on-page-load-with-time-delay-fast-clean/36860/2
-http://www.jacklmoore.com/colorbox/
-http://stackoverflow.com/questions/3278885/open-an-external-page-in-a-jquery-colorbox */
-
-
 /* --------------- TOP SECTION ------------- */
 
 .top-section {
@@ -218,20 +196,23 @@ http://stackoverflow.com/questions/3278885/open-an-external-page-in-a-jquery-col
 /* --------------- WEDDING DETAILS SECTION --------------- */
 
 #wedding-details-section {
+    clear: both;
     float: left;
     width: 100%;
+    margin-bottom: 100px;
+    font-size: 18px;
 }
 
 .event-details-ceremony {
     float:left;
     width: 50%;
-    position: relative;
+    /*position: relative;*/
 }
 
 .event-details-reception {
     float: left;
     width: 50%;
-    position: relative;
+    /*position: relative;*/
 }
 
 .event-details-reception p, .event-details-ceremony p {
@@ -243,89 +224,38 @@ iframe {
     padding: 20px 5px;
 }
 
-
-/* --------------- RSVP SECTION --------------- */
-
-#rsvp-section {
-    clear: both;
+p {
+    font-size: 18px;
 }
 
-.rsvp-style {
-    clear: both;
-    border-style: double;
-    border-width: 10px;
-    border-color: #EEE0E5;
-    margin: 15px;
-}
 
-.rsvp-style h3 {
-    font-size: 24px;
-    text-align: center;
-}
 
-h4.modal-title {
-    font-size: 30px;
-}
+.additional-details a {
+      text-decoration: none;
+  }
 
-.modal-header {
-    border-bottom: none;
-}
+  /* unvisited link */
+.additional-details a:link {
+      color: #8B0000;
+  }
 
-.btn-primary {
-    background-color: #EEE0E5;
-    color: #500000;
-    border-color: #ccc;
-}
+  /* visited link */
+.additional-details a:visited {
+      color: #8B0000;
+  }
 
-.btn-primary:visited {
-    background-color: #EED2EE;
-    color: #500000;
-    border-color: #ccc;
-}
+  /* mouse over link */
+.additional-details a:hover {
+      color: #8B0000;
+      border-bottom: 5px solid #CFDBC5;
+      text-decoration: none;
+  }
 
-.btn-primary:hover {
-    background-color: #fff0f5;
-    color: #500000;
-    border-color: #ccc;
-}
+  /* selected link */
+.additional-details a:active {
+      color: #8B0000;
+  }
 
-.btn-primary:active {
-    background-color: grey;
-    color: #500000;
-    border-color: #ccc;
-}
-
-.btn-default:hover {
-    background-color: #ccc;
-}
-
-a:focus{
-    outline:none;
-    outline-offset: none;
-    text-decoration: none;
-}
-
-/* To format the form: */
-/* www.htmlgoodies.com/tutorials/forms/article.php/3888746/HTML-Forms-From-Basics-to-Style-Layouts.htm */
-
-form {
-    text-align: left;
-}
-
-legend {
-    padding: 20px 0px;
-    margin: 0;
-    border-bottom: none;
-}
-
-label, input, textarea {
-    font-size: 16px;
-}
-
-form p {
-    font-size: 20px;
-    padding: 10px 0;
-}
 
 /* --------------- FOOTER --------------- */
 
@@ -375,11 +305,14 @@ footer a:focus, a:hover {
 
 
 
-
 /*************** MEDIA QUERIES *******************/
 @media screen and (max-width:1080px) and (min-width: 980px){
     nav {
       font-size: 18px;
+    }
+
+    #pics-slideshow {
+      width: 500px;
     }
 }
 
@@ -392,11 +325,6 @@ footer a:focus, a:hover {
 @media screen and (max-width: 768px){
     body {
       font-size: 16px;
-    }
-
-    nav {
-      width:100%;
-      height: 60px;
     }
 
     .jean, .steve, .event-details-ceremony, .event-details-reception {
@@ -412,7 +340,6 @@ footer a:focus, a:hover {
       display: block;
       float: none;
       background-color: #EEE0E5;
-
     }
 
   	#page-header nav li:first-child{
@@ -443,11 +370,6 @@ footer a:focus, a:hover {
       font-size: 14px;
     }
 
-    nav {
-      width:100%;
-      height: 60px;
-    }
-
     .jean, .steve, .event-details-ceremony, .event-details-reception {
       width: 100%;
     }
@@ -461,7 +383,6 @@ footer a:focus, a:hover {
       display: block;
       float: none;
       background-color: #EEE0E5;
-
     }
 
     #page-header nav li:first-child {
@@ -475,12 +396,12 @@ footer a:focus, a:hover {
       display: none;
     }
 
-    iframe .event-details-iframe {
+    iframe {
       width: 300px;
       height: auto;
     }
 
-    ul{
+    ul {
       height:0;
       transition:height 1s;
       overflow: hidden;

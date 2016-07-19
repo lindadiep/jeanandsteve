@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Jean and Steve Are Getting Married!</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <!-- Bootstrap, latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <!-- individual style sheet -->
@@ -18,36 +18,15 @@
   </head>
 
   <body>
-
-<!-- RSVP MODAL -->
-
-
-<!-- <div id="myModal" class="modal fade">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title">RSVP</h4>
-            </div>
-            <div class="modal-body">
-                <iframe src="https://docs.google.com/forms/d/1SKkicda6mm7ZkUyfu91Vv2vaeweCGDlM7KDPan280OY/viewform" class="rsvp-popup" ></iframe>
-            </div>
-        </div>
-    </div>
-</div> -->
-
-
-
-
-<!-- RSVP modal old -->
-    <!-- <div id="modal" class="modal fade" tabindex="-1" role="dialog">
+<!--
+RSVP MODAL
+    <div id="modal" class="modal fade" tabindex="-1" role="dialog">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             <h4 class="modal-title">Let us know if you're coming!</h4>
           </div>
-www.javascript-coder.com/html-form/html-form-email.phtml
           <div class="modal-body rsvp-style">
               <form>
                 <fieldset>
@@ -87,14 +66,14 @@ www.javascript-coder.com/html-form/html-form-email.phtml
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             <button type="submit" class="btn btn-primary" form="nameform" value="Submit">RSVP!</button>
           </div>
-        </div> /.modal-content
-      </div> /.modal-dialog
-    </div> /.modal -->
+        </div>  /.modal-content
+      </div>  /.modal-dialog
+    </div>  /.modal -->
 
     <header id="page-header">
       <nav>
           <ul>
-		  <li><div class="line"></div><div class="line"></div><div class="line"></div></li>
+		              <li><div class="line"></div><div class="line"></div><div class="line"></div></li>
                   <li><a href="#theirStory">J&amp;S</a></li>
                   <li><a href="#photos">PHOTOS</a></li>
                   <li><a href="#eventDetails">WEDDING DETAILS</a></li>
@@ -149,12 +128,15 @@ www.javascript-coder.com/html-form/html-form-email.phtml
               <li data-target="#pics-slideshow" data-slide-to="2"></li>
               <li data-target="#pics-slideshow" data-slide-to="3"></li>
               <li data-target="#pics-slideshow" data-slide-to="4"></li>
+              <li data-target="#pics-slideshow" data-slide-to="5"></li>
+              <li data-target="#pics-slideshow" data-slide-to="6"></li>
+              <li data-target="#pics-slideshow" data-slide-to="7"></li>
           </ol>
 
           <!-- Wrapper for slides -->
           <div class="carousel-inner" role="listbox">
               <div class="item active">
-                  <img src="images/engaged-1.1.jpg" alt="Jean and Steve">
+                  <img class="slide-img" src="images/engaged-1.1.jpg" alt="Jean and Steve">
                   <div class="carousel-caption">
                   </div>
               </div>
@@ -215,14 +197,22 @@ www.javascript-coder.com/html-form/html-form-email.phtml
         </div>
     </section>
 
-    <section id="wedding-details-section" >
+<!-- WEDDING DETAILS SECTION -->
+
+    <section id="wedding-details-section">
       <a name="eventDetails"></a>
       <h2>WEDDING DETAILS</h2>
 
       <div class="event-details-ceremony">
           <h3>Ceremony</h3>
 
-          <p>The ceremony will begin promptly at 3:00PM at the Kentlands Mansion, 320 Kent Square Rd, Gaithersburg, MD 20878</p>
+          <p>The ceremony will begin at 3:00pm at the Kentlands Mansion in Gaithersburg, Maryland. Light
+
+refreshments will follow shortly after. Ceremony will be outdoors (weather permitting). Dress is semi-formal.</p>
+
+          <p>Kentlands Mansion is located about 40 minutes north of Washington, DC. Please allow between 45 and 60 minutes travel time if leaving from Washington, DC. Ample parking will be available on-site.</p>
+
+          <p>Kentlands Mansion<br>320 Kent Square Rd<br>Gaithersburg, MD 20878</p>
 
           <div>
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12381.947664521655!2d-77.239441!3d39.11815!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2ce736d8aff6f070!2sKentlands+Mansion!5e0!3m2!1sen!2sus!4v1454221032614" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -231,17 +221,74 @@ www.javascript-coder.com/html-form/html-form-email.phtml
 
       <div class="event-details-reception">
           <h3>Reception</h3>
-          <p>The reception will begin at 6:00PM at Far East Restaurant, 5055 Nicholson Lane, Rockville, MD 20852</p>
+          <p>The reception will begin at 6:00PM at Far East Restaurant in Rockville, Maryland, about 20 minutes south of Kentlands Mansion. Start heading over around 5:30. Please allow 25 minutes
+
+of travel time. There will be plenty of on-site parking will be available.</p>
+          <p>Beer and wine will be served at the reception by a licensed bartender. If you are 21 or older and wish to partake, please make sure to bring your ID.</p>
+
+          <p>Far East Restaurant<br>5055 Nicholson Lane<br>Rockville, MD 20852</p>
           <div>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3098.638532403777!2d-77.10637928464521!3d39.04636027954794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7cc27c6efcb7b%3A0x2960dd3159f78843!2sFar+East+Restaurant!5e0!3m2!1sen!2sus!4v1454219665494" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
           </div>
       </div>
-    </section>
+  </section>
+
+  <section class="additional-details">
+      <div>
+          <h3>Travel and Accommodations</h3>
+          <p>If you are joining us from out of town, you may wish to book accommodations. We do not
+
+have a room block available, but feel free to search for hotels in Gaithersburg,
+
+Rockville, or Silver Spring, Maryland.
+
+Many other lodging accommodations are available closer to Washington, DC and Baltimore;
+
+we recommend you look for accommodations in those areas there if you&#39;re planning on exploring
+
+either city over the weekend.
+
+If a hotel room is prohibitedly expensive, or otherwise unavailable, we highly recommend
+
+<a href="https://www.airbnb.com/" target="_blank">AirBnB</a> as a cost-effective alternative.</p>
+          <p>We also recommend flying into <a href="http://www.bwiairport.com/en" target="_blank">Baltimore-Washington International Airport (BWI)</a>.
+
+<a href="http://www.flydulles.com/iad/dulles-international-airport" target="_blank">Dulles International Airport (IAD)</a> and <a href="http://www.flyreagan.com/dca/reagan-national-airport" target="_blank">Ronald Reagan Washington National Airport (DCA)</a> are nearby options as well, but further out.</p>
+      </div>
+
+    <div>
+        <h3>Things to Do</h3>
+
+        <p>Washington, DC<br>
+            <a href="https://www.si.edu/Museums" target="_blank">Smithsonian Musuems and Zoo</a><br>
+            <a href="http://www.wharfdc.com/fish-market/" target="_blank">Maine Avenue Fish Market</a><br>
+            <a href="https://washington.org/8-must-see-memorials-national-mall" target="_blank">White House and monuments</a><br>
+            <a href="http://www.usna.usda.gov/Information/hoursadm.html" target="_blank">National Arboretum</a><br>
+        </p>
+
+        <p>Gaithersburg/Rockville/Silver Spring<br>
+            <a href="https://www.nps.gov/choh/planyourvisit/greatfallstavernvisitorcenter.htm" target="_blank">Great Falls Park</a><br>
+            <a href="http://www.montgomeryparks.org/enterprise/park_facilities/boats/lake_needwood/lakeneedwood_boating.shtm" target="_blank">Lake Needwood</a><br>
+            <a href="http://www.yelp.com/biz/sugarloaf-mountain-dickerson" target="_blank">Sugarloaf Mountain</a><br>
+            <a href="http://www.montgomeryparks.org/brookside/" target="_blank">Brookside Gardens</a><br>
+        </p>
+
+        <p>Baltimore<br>
+            <a href="http://peabodyevents.library.jhu.edu/" target="_blank">Peabody Library and Institute</a><br>
+            <a href="https://artbma.org/" target="_blank">Baltimore Museum of Art</a><br>
+            <a href="http://www.rawlingsconservatory.org" target="_blank">Howard Peters Rawlings Conservatory and Botanic Gardens of Baltimore</a><br>
+            <a href="http://baltimore.org/neighborhoods-maps-transportation/fells-point" target="_blank">Fells Point</a><br>
+        </p>
+    </div>
+
+  </section>
 
     <footer>
       <p><a href="mailto:jeanplussteve@gmail.com">Email us</a> with any questions! Hope you can make it to our big day!</p>
       <a href="#" class="backTop">Back to top</a>
     </footer>
+
+
 
 
     <!-- jquery -->
@@ -253,38 +300,5 @@ www.javascript-coder.com/html-form/html-form-email.phtml
     <!-- individual js file -->
     <script src="js/index.js"></script>
 
-    <!-- RSVP pop up -->
-    <!-- <script type="text/javascript">
-        $(document).ready(function(){
-            $("#myModal").modal('show');
-        });
-    </script> -->
-
-
-
-    <!-- <script src="http://www.jacklmoore.com/colorbox/jquery.colorbox.js"></script> -->
-    <!-- <script>
-      function openColorBox(){
-        $.colorbox({
-            // html:"<p>Join Us On Our Special Day</p>",
-            href:"https://docs.google.com/forms/d/1SKkicda6mm7ZkUyfu91Vv2vaeweCGDlM7KDPan280OY/viewform",
-            iframe: "true",
-            className: "rsvp-popup",
-            width: "80%",
-            height: "80%",
-            overlayClose: "false",
-            onLoad: function() {
-            $('#cboxClose').remove();
-          }
-
-        });
-      }
-
-      setTimeout(openColorBox, 5000);
-    </script> -->
-
-
-
   </body>
-
 </html>
